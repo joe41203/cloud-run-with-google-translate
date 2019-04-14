@@ -13,7 +13,6 @@ end
 
 translate = Google::Cloud::Translate.new
 
-translation = translate.translate "Hello world!", to: "ja"
+translation = translate.translate "こんにちは。私は今、カフェにいます", to: "en"
 
-pp translate
-pp translation
+pp translation.text
